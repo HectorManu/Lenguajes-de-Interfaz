@@ -122,3 +122,145 @@ MUL	BTS	ROR
 IMUL	NOT		
 DIV	NEG		
 IDIV	
+
+## Primer ejercicio de programción 
+
+NUM1 BYTE
+NUM2 BYTE
+
+SUMAR AMBOS NUMEROS
+SUME WORD
+
+al ser esetas variables de memoria entonces debemos eclararlas 
+
+en  la parte de segmento de datos hay que declarar 
+num1 db
+num2 d
+suma dw
+nosotros tenemos que ponerle un dato 
+y suma podriamos ponerle un cero y hay que evitar el error de quedarse con un numero es decir hay que ponerlo de la sigueinte manera
+
+num1 db  y
+num2 d   x
+suma dw  0 
+
+entonces hay que tener en cuenta que haremos la suma y estos pueden crecer al siguiente escalon o sea un word y la suma de eso puede dar en que se de un dble word 
+
+ahora cómo obtenemos os datos 
+
+incertar foto que tome en clase
+
+![**MOV AL,NUM1**](ejemplos%20vistos%20en%20clase_malos.jpeg)
+estos ejemplos están mal pero siguen una idea 
+
+
+### seguir una idea 
+
+MOV AL,NUM1
+ADD AL,NUM2
+*en ensambaldor los métodos tienen que ser muy rigidos porque está todo aun nivel muy pequeño*
+por lo que hay qe seguir el método de suma con el acarreo 
+por lo cual hay que llevar siempre neustro acarreo 
+
+---
+> MOV AH,0 *ESTO ES DEBIDO A QUE VA A FUNCIONAR COMO NUESTRO ACARREO*
+
+> ADD AL,NUM2 *SUMAMOS A AL*
+
+> ADC AH,0 LA INTERPÑRETACION ES ESTA FUNCION ES AH=AH+0+C
+
+> MOV SUMA,AX LA INTERPRETACION ES QUE AX = AH,AL
+---
+
+PERO ES POSIBLE HACERLO AAL REVES
+
+---
+> MOV **AL**,0 *ESTO ES DEBIDO A QUE VA A FUNCIONAR COMO NUESTRO ACARREO*
+
+> ADD **AH**,NUM2 *SUMAMOS A AL*
+
+> ADC **AL**,0 LA INTERPÑRETACION ES ESTA FUNCION ES AH=AH+0+C
+
+> XCHG AL,AH LA INTEPRETCIÓN ES ESTO ES INTERCAMBIAR EL CRUCE DE LOS NÚMEROS
+
+> MOV SUMA,AX LA INTERPRETACION ES QUE AX = AH,AL
+---
+
+
+PERO PUEDEN HABER OTRAS FORMAS 
+
+>NOTA *APARTIR DE ESTOS SIGUIENTES PASOS ENTONCES TENEMOS QUE SON YA TAMAÑO WORD POR LO QUE NO UTILIZAMOS LA FUNCIÓN ADC DE ACARREO
+
+>MOV AH,0
+
+>MOV BH,0
+
+>MOV AL,NUM1
+
+>MOV BL,NUM2
+
+>ADD AX,BX LA INTERPRETACION ES ES AX=AX+BX
+
+>MOV SUMA,AX
+
+* OPCIÓN 3
+
+>MOV AH 0
+
+>MOV AL,NUM1
+
+>MOV BL,NUM2
+
+>ADD AL,BL
+
+>ADC AH,0
+
+>MOV SUMA,AX
+
+* OPCIÓN 4
+
+>MOV AX,0
+
+>MOV AL,NUM1
+
+>ADD SUMA,AX
+
+>MOV AL,NUM2
+
+>ADD SUMA, AX
+
+AQUÍ EMPEZAMOS UTILIZANDO OTRO MÉTODO DE DIRECCIONAMIENTO 
+
+
+>MOV AH,0 *este es el acarreo*
+
+>LEA BX,NUM1 *la posición estamos usando *
+
+>MOV AL,[BX]
+
+>LEA BX,NUM2
+
+>ADD AL,[BX]
+
+>ADC AH,0
+
+>LEA BX,SUMA
+
+>MOV [BX],AX
+
+
+opción 6
+
+> LEA SI,NUM1 *se opta por cambiar la variable*
+
+> MOV AL,[SI]
+
+> LEA SI,NUM2
+
+> ADD AL,[SI]
+
+> LEA SI,SUMA
+
+>MOV[SI],AL
+
+>ADC[SI+1]0
