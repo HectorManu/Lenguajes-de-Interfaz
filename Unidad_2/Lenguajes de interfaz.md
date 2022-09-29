@@ -229,9 +229,9 @@ PERO PUEDEN HABER OTRAS FORMAS
 
 >ADD SUMA, AX
 
-AQUÍ EMPEZAMOS UTILIZANDO OTRO MÉTODO DE DIRECCIONAMIENTO 
+AQUÍ EMPEZAMOS UTILIZANDO OTRO MÉTODO DE DIRECCIONAMIENTO LOS ANTERIORES SON DE MODO DIRECTO
 
-
+INDIRECTO POR REGISTRO
 >MOV AH,0 *este es el acarreo*
 
 >LEA BX,NUM1 *la posición estamos usando *
@@ -250,6 +250,7 @@ AQUÍ EMPEZAMOS UTILIZANDO OTRO MÉTODO DE DIRECCIONAMIENTO
 
 
 opción 6
+RELATIVO A LA BASE
 
 > LEA SI,NUM1 *se opta por cambiar la variable*
 
@@ -261,6 +262,13 @@ opción 6
 
 > LEA SI,SUMA
 
->MOV[SI],AL
+>MOV[SI],AL*muervo a la parte baja de la suma*
 
->ADC[SI+1]0
+>ADC[SI+1]0*y luego el acarreo lo sumo a esta*
+
+![alt](ejemplos_buenos_1.jpeg)
+
+la tarea que tenemos qué hacer es comprobar en el codificador
+cuando declaremos nuestra varibale e el turbo deguer tenemos que comprobar el acarreo pero tenemso que probar con un 0ffh
+
+quitar todo en el segmento de código y también en el segmento y por lo tanto tenemos que poner siempre las dos instrucciones para que sirva el código 
