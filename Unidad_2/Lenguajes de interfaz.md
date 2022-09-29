@@ -272,3 +272,15 @@ la tarea que tenemos qué hacer es comprobar en el codificador
 cuando declaremos nuestra varibale e el turbo deguer tenemos que comprobar el acarreo pero tenemso que probar con un 0ffh
 
 quitar todo en el segmento de código y también en el segmento y por lo tanto tenemos que poner siempre las dos instrucciones para que sirva el código 
+
+
+problema
+ se tiene un arreglo con cinco número s t byte llamado array
+ sumar todos los números y almacenar el resultdoo en ua variable de memoria tipo word 
+ llamda suma
+
+ hay que escoger un método de direccionamiento para acceder a los valores del arreglo
+
+ Array DB 25H,3FH,78H,10H,15H 
+ SUMA DW,0
+ 
