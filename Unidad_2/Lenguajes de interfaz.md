@@ -284,3 +284,59 @@ problema
  Array DB 25H,3FH,78H,10H,15H 
  SUMA DW,0
  
+
+ # Capítulo 5
+ ## de instrucciones aritméticas y lógicas 
+
+ **BT** Evalua nuestro bit si es cero o uno 
+ 
+ **BTC** LO VUELVE 0 SI ES UNO Y LO CONTRARLO 
+ BTR LO RESETEA A CERO
+
+ NOT CH ES EL COMPLENMENTO O NEGACIÓN LÓGICA 
+
+ ## INSTRUCCIONE DE DESPLAZAMIENCO SHL Y TAMBIÉN DE CORRIMIENTO 
+    - LINEALES 
+        - DESPLAZAMN LO SREGISTRODE DE MANERA LINEAL 
+        aquí por ejemplo podriamos eciri que si mueve a la derecha el 256 le movemos hacia la izquierda entonces tendriamos 2560 eso quiere decir que multiplicamos por lab base. 
+    - CIRCULARES
+        - no pierden los bits
+        a diferencia de los mivimoentos que hacia anteriormente este guarda el estado anterior que teniamos de dicha variable 
+
+## Compraraciones de cadenas
+
+- ![](ejemplo%20de%20utilizaci%C3%B3n%20de%20mov.jpeg)
+
+podemos observarque usa xor al,al pero eso podría ser lo mismo que mov al, 0 pero utilizamos xor para que sea de manrea directa 
+
+el repne es que eseta repitiendo hata encontrar el igual es decir se detiene al llegar al 5 pero el 100 es como el número e intereaciones. 
+
+INTRUCCIONES DE OPERACIONES LOGICAS Y ARITMETICAS
+
+ARITMETICAS
+
+LOGICAS	
+DESPLAZAMIENTO Y
+
+CORRIMIENTO
+
+COMPARACION DE
+
+CADENAS
+
+ADD
+
+AND	SHL	SCAS
+INC	OR	SAL	CMPS
+ADC	XOR	SHR	
+SUB	TEST	SAR	
+DEC	BT	RCL	
+SBB	BTC	ROL	
+CMP	BTR	RCR	
+MUL	BTS	ROR	
+IMUL	NOT		
+DIV	NEG		
+IDIV	
+
+    
+
