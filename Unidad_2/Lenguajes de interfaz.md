@@ -305,11 +305,22 @@ problema
 
 ## Compraraciones de cadenas
 
+### SCAS
+
 - ![](ejemplo%20de%20utilizaci%C3%B3n%20de%20mov.jpeg)
 
 podemos observarque usa xor al,al pero eso podría ser lo mismo que mov al, 0 pero utilizamos xor para que sea de manrea directa 
 
 el repne es que eseta repitiendo hata encontrar el igual es decir se detiene al llegar al 5 pero el 100 es como el número e intereaciones. 
+
+
+### CMPS
+
+hay CMPSB CMPSW CMPSD
+
+esto hace quna búsqueda que contuna siempre  cuando exista una condición de igualdad.   
+
+
 
 INTRUCCIONES DE OPERACIONES LOGICAS Y ARITMETICAS
 
@@ -340,3 +351,33 @@ IDIV
 
     
 
+## capitulo 6
+
+## istrucciones de saltos
+
+JA
+JAE PARA QUE NO SE ACTIVEN LAS BANDREAS
+
+JBE
+JC
+JE O JZ CUANOD NO SEA CERO O NO SE AIUGLA 
+G JGE 
+
+JLE 
+JNC 
+JNE O JNZ
+JNO SI NO HAY SIGNO
+JNS SI NO HAY PARIDAD
+JNP O JPO 
+JO
+JP O JPE
+JS 
+JCX 
+
+A = ABOVE, B= 
+
+
+mov [] de esta manera esta escribiendo 
+
+<!--  -->
+mov __,[] es esta manera esta leyendo
