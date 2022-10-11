@@ -381,3 +381,57 @@ mov [] de esta manera esta escribiendo
 
 <!--  -->
 mov __,[] es esta manera esta leyendo
+
+
+
+
+Supongamos que tenmos dos números 
+
+Uno en AL Y OTRO EN BL
+
+SI LOS SUMAMOS Y LA SUMA ES MAYOR DE 10 O SEA 
+SI SUMA > 10 , ENTONCES AL-BL
+SI LA SUMA <=10, ENTONCES BL-AL 
+
+
+ADD AL,BL
+ADD SUMA,AL
+CMP SUMA,10
+JA, OTRO 
+SUB AL-BL
+
+SUB BL-AL 
+
+
+
+En el registro AL hay un caracter ASCII
+
+Si el caracter es Mayuscula BL el cacter que sigue al de registro AL 
+
+Si el caracter es minúscula 
+poner en BL el caracter siguiente
+
+Poner en BL el caracter anterior al leido anterior al leido 
+
+    
+        **cmp al,61h;**aqui comparamos si al es mayor que 61h si se cumple se salta a otro pero si no pues sigue hacia abajo
+        
+        ja otro
+
+            add al,1
+
+            jm sale
+
+otro:   sub al,1
+
+.
+
+        CMP AL, "z" ;SI ES MAYOR O IGUAL 
+        JBE MAYUSCULA
+        cmp AL "z"
+        ja no_esletra
+            dec al
+            jmp sale
+mayuscula:  
+
+MINUSCULA
