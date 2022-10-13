@@ -422,7 +422,7 @@ Poner en BL el caracter anterior al leido anterior al leido
 
             jm sale
 
-otro:   sub al,1
+    otro:   sub al,1
 
 .
 
@@ -435,3 +435,66 @@ otro:   sub al,1
 mayuscula:  
 
 MINUSCULA
+
+
+**nos dejo un ejercicios el cual la solución para el primero es este:**
+
+    var1 DB 01H
+    var2 DB 010H
+
+    result DW 0
+
+    
+    ;¿cómo moverlo a registro?
+
+    ;add result, var1 esto no se puede hacer
+    ;add result, var2
+
+    ;entonces tenemos que hacer una operación para tener un resultado
+
+    ;a un registro ponerle un valor 
+
+    MOV AL,var1
+
+    MOV BL,var2
+
+    ADD AL,BL
+
+    ADC AH,0
+
+    MOV result,AX
+
+
+        cmp AX,064H;aquí si resulto es mayor 
+            JA mayor
+            mov ax,0AH
+            mov bx,05FH
+            JA sale
+
+    mayor:  mov ax,014H
+            mov bx,AX
+
+    Sale: 
+
+
+<br>
+
+    Array1 DB 0,1
+    result Dw 0
+
+    mov al,array1
+    mov bl,array1+1
+    mov cl,result
+        cmp ax,bx
+
+            JA mayor1
+            ;aquí array1+1 es mayor
+            add cx,ax
+            add cx,bx
+            JA sale
+
+    mayor1: 
+            sub cx,ax
+            sub cx,bx
+
+    sale:
