@@ -498,3 +498,8 @@ MINUSCULA
             sub cx,bx
 
     sale:
+
+
+
+
+# interrupciones de software 
