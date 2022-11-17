@@ -503,3 +503,11 @@ MINUSCULA
 
 
 # interrupciones de software 
+
+
+# Notas de clase de 17 de noviembre 
+hacer algun algortimo qaue onfom un passwordde 8 caracteres vamos vien se entiende de qué se trata elobjetivo es una interrupción entonces cuando se mueva el maus pues muevelo hasta que aparece tu paswrord o sea fue generado de manera aleatoria, eso también se tiene que hacer en dos lenguajes si es posible establecer un que no se pase por el tamaño en el programa anterior que hicimos mandar a un salto yo les resolve cómo resolver eso de forma pasada pes no sé la verdad era es hacer ese o el de contador pues no estamos obligados a hacerlo, cuál es el otro aspecto en el contador es libre el que haga cualquiera de los dos el del contador tiene un detallle adicional voy a agarrar el trabajo de todos los trabajos para ponerlos a competir para que el mejor en optimización pues gane algo de punto. Tiene un valor adicional no lo tiene de esa forma no son competibles sin embargo lo voy a checar y sin embargo pues si no na la verda me di ohuea escribir. nos va mostrar un poco cómo están esos programas, no tiene un ejemplo, nos va a mostrar cómo funciona lo dle mause es en pocición x y y y si nos vamos hacia allá estamos en la pocisión más baja en este lado va generando números que podemos utilizar para seleccionar un password tenemos que escoger caracteres validos cómo le vamos a hacer le hciste es que diseñar una manera de resolverlo cómo podemos usar esos valore para utilizar un password, es sensillo entoncees solo no hago la interrupción y lo que hacemos entonces pues es simplemente no hacer la interrución y podemos hacer la impresión para que pues dé, pues aqui'estmaso entonces tenemos que hacer eso en ambos lenguajes, hay una interrupción que nos da la hora del sistema, numero de lineas de código ya cons instrucciones de ensamblador tamaño del ejecutable en bytes y conteo
+ 
+ numero de lineas de código
+ tamaño del ejecutable
+ y conteo en un minuto
